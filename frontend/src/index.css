@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #240a10 0%, #3d1410 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(40, 20, 25, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: #f8fafc;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(244, 63, 94, 0.2);
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #e11d48 0%, #d97706 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: linear-gradient(135deg, #be123c 0%, #b45309 100%) !important;
+  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5) !important;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: #fb923c;
+  border-color: #fb923c;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(251, 146, 60, 0.1);
+  color: #fdba74;
+  border-color: #fdba74;
+}
+
+.btn-outline-danger {
+  color: #fb7185;
+  border-color: #fb7185;
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(251, 113, 133, 0.1);
+  color: #fda4af;
+  border-color: #fda4af;
+}
+
+/* Inputs */
+.form-control, .form-select {
+  background-color: rgba(20, 10, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: rgba(20, 10, 15, 0.8);
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 0.25rem rgba(251, 191, 36, 0.25);
+  color: #f8fafc;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+/* Modal styling for dark theme */
+.modal-content {
+  background: #2a151b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+  border-radius: 16px;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Navigation */
+.glass-nav {
+  background: rgba(20, 10, 15, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(to right, #f43f5e, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text Colors */
+.text-muted {
+  color: #94a3b8 !important;
+}
+
+.text-primary-gradient {
+  background: linear-gradient(to right, #f43f5e, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badges */
+.badge.bg-success {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+  color: #34d399 !important;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.badge.bg-danger {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+  color: #f87171 !important;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.text-primary {
+  color: #fb923c !important;
+}
